@@ -75,6 +75,10 @@ namespace Logger.Library
             }
         }
 
-        
+        private string ResponseLog = @"SELECT YOUR DATA HERE";
+
+        private string RequestLog = @"SELECT YOUR DATA HERE";
+
+        private string ErrorLog = @"SELECT YOUR DATA HERE";
     }
 }

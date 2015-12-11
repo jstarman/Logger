@@ -2,12 +2,12 @@
 using CommandLine.Text;
 using Microsoft.Owin.Hosting;
 using System;
-using OwinApp;
+using Web.Library;
 
 
-namespace Logger
+namespace WebConsole
 {
-    class LoggerProgram
+    class WebProgram
     {
         private static void Main(string[] args)
         {

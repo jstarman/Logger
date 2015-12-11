@@ -2,7 +2,7 @@
 using Newtonsoft.Json.Serialization;
 using System;
 
-namespace OwinApp
+namespace Web.Library
 {
     public class CustomJsonSerializer : JsonSerializer
     {

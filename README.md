@@ -1,14 +1,12 @@
-## Logging sample
+## Mixed bag sample app
 
-Pre-Reqs:
-OWIN
-Nancyfx
-Log4Net
-ElasticSearch Appender
-C#
-Elastic Search Server
+This project is a mixed bag. It contains:
+- A sample for pulling data from a DB and saving to ElasticSearch.
+- Nancyfx/Owin self hosted web server implementation.
 
-How to run:
-Open project build.
-Run console app.
-Hit endpoints available to log.
+###Contained Dependencies
+- OWIN
+- Nancyfx
+- Log4Net
+- ElasticSearch Appender
+- C#

@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OwinApp
+namespace Web.Library
 {
     public class Bootstrapper : DefaultNancyBootstrapper
     {

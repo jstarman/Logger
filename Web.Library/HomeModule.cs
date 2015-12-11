@@ -9,7 +9,7 @@ using System.Linq;
 using log4net;
 using System.Threading.Tasks;
 
-namespace OwinApp
+namespace Web.Library
 {
     public class HomeModule : NancyModule
     {

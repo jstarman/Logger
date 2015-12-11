@@ -1,7 +1,8 @@
 ﻿using Owin;
 using Nancy;
 using Nancy.Owin;
-namespace OwinApp
+
+namespace Web.Library
 {
     public class Startup
     {
