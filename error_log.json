@@ -1,0 +1,61 @@
+{
+	"mappings" : {
+		"log": {
+			"properties": {
+				"AdditionalInfo": {
+					"type": "string"
+				},
+				"ApplicationCode": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"ApplicationId": {
+					"type": "long"
+				},
+				"ApplicationName": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Code": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Details": {
+					"type": "string"
+				},
+				"IpAddress": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Location": {
+					"type": "string"
+				},
+				"LogType": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"LoggedOn": {
+					"type": "date",
+					"format": "strict_date_optional_time||epoch_millis"
+				},
+				"Logger": {
+					"type": "string"
+				},
+				"Message": {
+					"type": "string"
+				},
+				"RelativeUri": {
+					"type": "string"
+				},
+				"RequestId": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Thread": {
+					"type": "string",
+					"index": "not_analyzed"
+				}
+			}
+		}
+	}
+}

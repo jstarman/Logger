@@ -11,26 +11,31 @@ namespace Logger
     {
         private static void Main(string[] args)
         {
-            var url = "http://+:8000";
-
-            using (WebApp.Start<Startup>(url))
+            var options = new Options();
+            if (Parser.Default.ParseArguments(args, options))
             {
-                Console.WriteLine("Running on {0}", url);
-                Console.WriteLine("Press enter to exit");
-                Console.ReadLine();
+                var url = options.Url;
+
+                using (WebApp.Start<Startup>(url))
+                {
+                    Console.WriteLine("Running on {0}", url);
+                    Console.WriteLine("Press enter to exit");
+                    Console.ReadLine();
+                }
+            }
+            else
+            {
+                Console.WriteLine("Exiting...bad arguments");
             }
         }
 
         private class Options
         {
-            [Option('k', "publicKey", Required = false, HelpText = "Public key file name")]
-            public string PublicKeyFileName { get; set; }
+            [Option('u', "url", Required = false, DefaultValue="http://+:8000", HelpText = "Root url")]
+            public string Url { get; set; }
 
-            [Option('s', "secretkey", Required = false, HelpText = "Private key file name")]
-            public string PrivateKeyFileName { get; set; }
-
-            [Option('p', "password", Required = false, HelpText = "Private key password")]
-            public string PrivateKeyPassword { get; set; }
+            [Option('s', "script", Required = false, HelpText = "Response script file name to run")]
+            public string Script { get; set; }
 
             [HelpOption]
             public string GetUsage()

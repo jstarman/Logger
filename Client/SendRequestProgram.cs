@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Client
 {
-    class Program
+    class SendRequestProgram
     {
         static void Main(string[] args)
         {

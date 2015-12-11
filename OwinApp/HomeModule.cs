@@ -88,9 +88,9 @@ namespace OwinApp
 
     public class Sender
     {
-        public string name { get; set; }
-        public int number { get; set; }
-        public DateTime date { get; set; }
-        public IEnumerable<string> list { get; set; }
+        public string Name { get; set; }
+        public int Number { get; set; }
+        public DateTime Date { get; set; }
+        public IEnumerable<string> List { get; set; }
     }
 }

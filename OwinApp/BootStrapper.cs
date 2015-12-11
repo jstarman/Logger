@@ -3,6 +3,7 @@ using log4net.Config;
 using Nancy;
 using Nancy.Bootstrapper;
 using Nancy.TinyIoc;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,6 +29,7 @@ namespace OwinApp
         {
             base.ConfigureApplicationContainer(container);
             container.Register(typeof(ILog), (c, o) => LogManager.GetLogger(typeof(Bootstrapper)));
+            container.Register<JsonSerializer, CustomJsonSerializer>();
         }
     }
 }
