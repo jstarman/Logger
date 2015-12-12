@@ -24,10 +24,7 @@ namespace Web.Library
         }
 
         public void Handle(HttpStatusCode statusCode, NancyContext context)
-        {
-            JsonResponse response = new JsonResponse("wtf", new DefaultJsonSerializer());
-            response.StatusCode = HttpStatusCode.InternalServerError;
-            context.Response = response;
+        {           
         }
     }
 }
