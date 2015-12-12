@@ -79,15 +79,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApiSimulatorModule.cs" />
     <Compile Include="BootStrapper.cs" />
     <Compile Include="CustomJsonSerializer.cs" />
-    <Compile Include="HomeModule.cs" />
+    <Compile Include="ErrorStatusCodeHandler.cs" />
+    <Compile Include="ResponseScript.cs" />
+    <Compile Include="SampleModule.cs" />
     <Compile Include="ImportantService.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

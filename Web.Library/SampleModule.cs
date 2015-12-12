@@ -1,21 +1,17 @@
 ﻿using Nancy;
-using Nancy.Owin;
 using Nancy.ModelBinding;
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Threading;
-using System.Linq;
 using log4net;
 using System.Threading.Tasks;
 
 namespace Web.Library
 {
-    public class HomeModule : NancyModule
+    public class SampleModule : NancyModule
     {
         private readonly ILog _logger;
 
-        public HomeModule(ILog logger)
+        public SampleModule(ILog logger)
         {
             _logger = logger;
             Get["/"] = _ =>

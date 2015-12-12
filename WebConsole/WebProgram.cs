@@ -1,7 +1,9 @@
 ﻿using CommandLine;
 using CommandLine.Text;
 using Microsoft.Owin.Hosting;
+using Newtonsoft.Json;
 using System;
+using System.IO;
 using Web.Library;
 
 
@@ -15,6 +17,7 @@ namespace WebConsole
             if (Parser.Default.ParseArguments(args, options))
             {
                 var url = options.Url;
+
 
                 using (WebApp.Start<Startup>(url))
                 {
@@ -33,9 +36,6 @@ namespace WebConsole
         {
             [Option('u', "url", Required = false, DefaultValue="http://+:8000", HelpText = "Root url")]
             public string Url { get; set; }
-
-            [Option('s', "script", Required = false, HelpText = "Response script file name to run")]
-            public string Script { get; set; }
 
             [HelpOption]
             public string GetUsage()

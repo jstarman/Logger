@@ -1,0 +1,5 @@
+{
+    "responseDeleyMs": 5000,
+    "responseCodes": [ 200, 400, 500 ],
+    "body": { "aProperty":  "Hello World" }
+}
